@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registro de programadores </title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+
+    <nav>
+        <div class="container">
+            <a href="#" class="brand"> OTP </a>
+        </div>
+    </nav>
+
+
+
+    <section class="container">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h3> Registro de programadores </h3>
+            </div>
+            <!-- 
+            <div class="col-lg-6">
+                <h3> Listado de programadores </h3>
+            </div> -->
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+
+                
+                
+                <form action="/core/register.php" name="programadorForm" method="post">
+                    <div id="output">  </div>
+                    
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <label for=""> Nombre completo: </label>
+                            <input type="text" class="form-control" name="name"  required>
+
+                        </div>
+                        <div class="col-lg-6">
+                            <label for=""> Apellidos: </label>
+                            <input type="text" class="form-control" name="last_name" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label for=""> Cédula: </label>
+                            <input type="text" class="form-control" name="cedula" required>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label for=""> Correo: </label>
+                            <input type="text" class="form-control" name="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <label for=""> Lenguaje: </label>
+                            <select name="lenguajes" class="form-control" required>
+                                <option value="PHP"> Php </option>
+                                <option value="Javascript"> Javascript </option>
+                                <option value="Cpp"> C++ </option>
+                                <option value="Python"> Python </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit"> Guardar </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+        
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+
+    <script src="js/index.js">  </script>
+</body>
+
+
+</html>
